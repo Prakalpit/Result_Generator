@@ -45,35 +45,36 @@ def result():
 
     # case of english
 
-    if eng_dp >= 0.9:  # it will be lie it is 90% which is A+
+    if (eng_dp >= 0.9):  # it will be lie it is 90% which is A+
         eng_pg = '4.0'
         eng_lg = 'A+'
 
-    elif eng_dp < 0.9 and (eng_dp >= 0.8):  # its like from 80-89  % and it goes on as such
+    elif (eng_dp < 0.9) and (eng_dp >= 0.8):  # its like from 80-89  % and it goes on as such
         eng_pg = '3.6'
         eng_lg = 'A'
 
-    elif eng_dp < 0.8 and (eng_dp >= 0.7):
+    elif (eng_dp < 0.8) and (eng_dp >= 0.7):
         eng_pg = '3.2'  # it is point grade
         eng_lg = 'B+'  # it is letter grade
 
-    elif eng_dp < 0.7 and (eng_dp >= 0.6):
+    elif (eng_dp < 0.7) and (eng_dp >= 0.6):
         eng_pg = '2.8'
         eng_lg = 'B'
 
-    elif eng_dp < 0.6 and (eng_dp >= 0.5):
+    elif (eng_dp < 0.6) and (eng_dp >= 0.5):
         eng_pg = '2.4'
         eng_lg = 'C+'
 
-    elif eng_dp < 0.5 and (eng_dp >= 0.4):
+    elif (eng_dp < 0.5) and (eng_dp >= 0.4):
         eng_pg = '2.0'
         eng_lg = 'C'
-    elif eng_dp < 0.4 and (eng_dp >= 0.3):
+    elif (eng_dp < 0.4) and (eng_dp >= 0.3):
         eng_pg = '1.6'
         eng_lg = 'D'
     else:
         eng_pg = '1.2'
         eng_lg = 'E'
+
 
     # case of nepali
 
@@ -107,6 +108,7 @@ def result():
         nep_pg = '1.2'
         soc_lg = 'E'
 
+
     # social now
     if soc_dp >= 0.9:
         soc_pg = '4.0'
@@ -138,6 +140,8 @@ def result():
         soc_pg = '1.2'
         soc_lg = 'E'
 
+
+
     # science now
     if sci_dp >= 0.9:
         sci_pg = '4.0'
@@ -168,6 +172,7 @@ def result():
     else:
         sci_pg = '1.2'
         sci_lg = 'E'
+
 
     # mathematics now
 
@@ -201,93 +206,91 @@ def result():
         mat_pg = '1.2'
         mat_lg = 'E'
 
-    # hp case
-    if hp_dp >= 0.9:
+
+    #hp case
+    if (hp_dp >= 0.9):  # it will be lie it is 90% which is A+
         hp_pg = '4.0'
         hp_lg = 'A+'
 
-    elif hp_dp < 0.9 and (mat_dp >= 0.8):
+    elif (hp_dp < 0.9) and (hp_dp >= 0.8):  # its like from 80-89  % and it goes on as such
         hp_pg = '3.6'
         hp_lg = 'A'
 
-    elif hp_dp < 0.8 and (mat_dp >= 0.7):
-        hp_pg = '3.2'
-        hp_lg = 'B+'
+    elif (hp_dp < 0.8) and (hp_dp >= 0.7):
+        hp_pg = '3.2'  # it is point grade
+        hp_lg = 'B+'  # it is letter grade
 
-    elif hp_dp < 0.7 and (mat_dp >= 0.6):
+    elif (hp_dp < 0.7) and (hp_dp >= 0.6):
         hp_pg = '2.8'
         hp_lg = 'B'
 
-    elif hp_dp < 0.6 and (mat_dp >= 0.5):
+    elif (hp_dp < 0.6) and (hp_dp >= 0.5):
         hp_pg = '2.4'
         hp_lg = 'C+'
 
-    elif hp_dp < 0.5 and (mat_dp >= 0.4):
+    elif (hp_dp < 0.5) and (hp_dp >= 0.4):
         hp_pg = '2.0'
         hp_lg = 'C'
-
-    elif hp_dp < 0.4 and (mat_dp >= 0.3):
+    elif (hp_dp < 0.4) and (hp_dp >= 0.3):
         hp_pg = '1.6'
         hp_lg = 'D'
     else:
         hp_pg = '1.2'
         hp_lg = 'E'
 
-    # moral case
-
-    if moral_dp >= 0.9:
+    #moral case
+    if (moral_dp >= 0.9):  # it will be lie it is 90% which is A+
         moral_pg = '4.0'
         moral_lg = 'A+'
 
-    elif moral_dp < 0.9 and (mat_dp >= 0.8):
+    elif (moral_dp < 0.9) and (moral_dp >= 0.8):  # its like from 80-89  % and it goes on as such
         moral_pg = '3.6'
-        moral_lg = 'A'
+        hp_lg = 'A'
 
-    elif moral_dp < 0.8 and (mat_dp >= 0.7):
-        moral_pg = '3.2'
-        moral_lg = 'B+'
+    elif (moral_dp < 0.8) and (moral_dp >= 0.7):
+        moral_pg = '3.2'  # it is point grade
+        moral_lg = 'B+'  # it is letter grade
 
-    elif moral_dp < 0.7 and (mat_dp >= 0.6):
+    elif (moral_dp < 0.7) and (moral_dp >= 0.6):
         moral_pg = '2.8'
         moral_lg = 'B'
 
-    elif moral_dp < 0.6 and (mat_dp >= 0.5):
+    elif (moral_dp < 0.6) and (moral_dp >= 0.5):
         moral_pg = '2.4'
         moral_lg = 'C+'
 
-    elif moral_dp < 0.5 and (mat_dp >= 0.4):
+    elif (moral_dp < 0.5) and (moral_dp >= 0.4):
         moral_pg = '2.0'
         moral_lg = 'C'
-
-    elif mat_dp < 0.4 and (mat_dp >= 0.3):
+    elif (moral_dp < 0.4) and (moral_dp >= 0.3):
         moral_pg = '1.6'
         moral_lg = 'D'
     else:
         moral_pg = '1.2'
         moral_lg = 'E'
 
-    grade_point_raw = (float(mat_pg) + float(eng_pg) + float(soc_pg) + float(sci_pg) + float(nep_pg) + float(hp_pg)+float(moral_pg)) / 7
-    grade_pointRaw = round(grade_point_raw, 2)
-
+    grade_point_raw = (float(moral_pg) + float(hp_pg) + float(mat_pg) + float(sci_pg) + float(soc_pg) + float(eng_pg) + float(nep_pg)) / 7
+    grade_pointRaw = round(float(grade_point_raw), 2)
     global grade_point
     grade_point=grade_pointRaw
     output1.insert(0, grade_point)
-    if (grade_point >3.6) and (grade_point<=4.0):
+
+    if (grade_point<=4.0) and (grade_point >3.6):
         output2.insert(0, "A+")
 
-    elif (grade_point >3.2) and (grade_point<=3.6):
+    elif (grade_point<=3.6) and (grade_point >3.2):
         output2.insert(0, "A")
 
-    elif (grade_point >2.8) and (grade_point<=3.2):
+    elif (grade_point<=3.2) and (grade_point >2.8):
         output2.insert(0, "B+")
 
-    elif (grade_point > 2.4) and (grade_point<=2.8):
+    elif (grade_point<=2.8) and (grade_point > 2.4):
         output2.insert(0, "B")
 
-    elif (grade_point >2.0) and (grade_point<=2.4):
+    elif (grade_point<=2.4) and (grade_point >2.0):
         output2.insert(0, "C+")
 
-    elif (grade_point >1.6) and (grade_point<=2.0):
+    elif (grade_point<=2.0) and (grade_point >1.6):
         output2.insert(0, "D")
 
     else:
